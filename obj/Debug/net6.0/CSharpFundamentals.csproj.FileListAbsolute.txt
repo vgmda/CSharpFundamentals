@@ -1,0 +1,15 @@
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/CSharpFundamentals
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/CSharpFundamentals.deps.json
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/CSharpFundamentals.runtimeconfig.json
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/CSharpFundamentals.dll
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/ref/CSharpFundamentals.dll
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/CSharpFundamentals.pdb
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.csproj.AssemblyReference.cache
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.AssemblyInfoInputs.cache
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.AssemblyInfo.cs
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.csproj.CoreCompileInputs.cache
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.dll
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/ref/CSharpFundamentals.dll
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.pdb
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.genruntimeconfig.cache
