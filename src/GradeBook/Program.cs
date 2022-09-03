@@ -1,7 +1,4 @@
-﻿
-using System;
-
-namespace GradeBook;
+﻿namespace GradeBook;
 
 class Program
 {
@@ -13,7 +10,7 @@ class Program
         book.AddGrade(55.2);
         book.AddGrade(81.9);
         book.grades.Add(95.3);
-        book.ShowStatistics();
+        book.GetStatistics();
 
 
         // Explicit typing
