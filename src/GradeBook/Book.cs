@@ -1,9 +1,9 @@
 namespace GradeBook;
 
-class Book 
+public class Book 
 {
     public List<double> grades;
-    private string name;
+    public string name;
 
     // Explicit (implicit) constructor
     public Book(string name)
@@ -28,9 +28,9 @@ class Book
 
         foreach(double grade in grades)
         {
-            // if(number > highGrade)
+            // if(grade > result.High)
             // {
-            //     highGrade = number;
+            //     result.High = grade;
             // }
             result.High = Math.Max(grade, result.High);
             result.Low = Math.Min(grade, result.Low);
@@ -41,9 +41,7 @@ class Book
         return result;
     }
 
-    Console.WriteLine($"The lowest grade is {lowGrade}");
-        Console.WriteLine($"The highest grade is {highGrade}");
-        Console.WriteLine($"The average grade is {result:N1}");
+    
 
 
 

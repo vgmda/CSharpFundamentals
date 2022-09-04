@@ -96,3 +96,9 @@
 /Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/obj/Debug/net6.0/ref/GradeBook.Tests.dll
 /Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/obj/Debug/net6.0/GradeBook.Tests.pdb
 /Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/obj/Debug/net6.0/GradeBook.Tests.genruntimeconfig.cache
+/Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+/Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/bin/Debug/net6.0/CSharpFundamentals.deps.json
+/Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/bin/Debug/net6.0/CSharpFundamentals.runtimeconfig.json
+/Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/bin/Debug/net6.0/CSharpFundamentals
+/Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/bin/Debug/net6.0/CSharpFundamentals.dll
+/Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/bin/Debug/net6.0/CSharpFundamentals.pdb

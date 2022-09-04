@@ -13,3 +13,8 @@
 /Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/ref/CSharpFundamentals.dll
 /Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.pdb
 /Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.genruntimeconfig.cache
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/xunit.abstractions.dll
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/xunit.assert.dll
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/xunit.core.dll
+/Users/vasile/Projects/CSharpFundamentals/bin/Debug/net6.0/xunit.execution.dotnet.dll
+/Users/vasile/Projects/CSharpFundamentals/obj/Debug/net6.0/CSharpFundamentals.csproj.CopyComplete

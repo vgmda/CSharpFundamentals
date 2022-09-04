@@ -4,6 +4,64 @@
     "/Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/GradeBook.Tests.csproj": {}
   },
   "projects": {
+    "/Users/vasile/Projects/CSharpFundamentals/CSharpFundamentals.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vasile/Projects/CSharpFundamentals/CSharpFundamentals.csproj",
+        "projectName": "CSharpFundamentals",
+        "projectPath": "/Users/vasile/Projects/CSharpFundamentals/CSharpFundamentals.csproj",
+        "packagesPath": "/Users/vasile/.nuget/packages/",
+        "outputPath": "/Users/vasile/Projects/CSharpFundamentals/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vasile/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "xUnit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/vasile/Projects/CSharpFundamentals/test/GradeBook.Tests/GradeBook.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +83,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/vasile/Projects/CSharpFundamentals/CSharpFundamentals.csproj": {
+                "projectPath": "/Users/vasile/Projects/CSharpFundamentals/CSharpFundamentals.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
