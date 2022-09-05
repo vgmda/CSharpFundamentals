@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.TestPlatform.TestHost": {
+              "target": "Package",
+              "version": "[17.4.0-preview-20220726-02, )"
+            },
             "xUnit": {
               "target": "Package",
               "version": "[2.4.2, )"

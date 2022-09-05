@@ -14,6 +14,7 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xunit.core/2.4.2/build/xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core/2.4.2/build/xunit.core.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost/17.4.0-preview-20220726-02/build/netcoreapp2.1/Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost/17.4.0-preview-20220726-02/build/netcoreapp2.1/Microsoft.TestPlatform.TestHost.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/Users/vasile/.nuget/packages/xunit.analyzers/1.0.0</Pkgxunit_analyzers>
