@@ -1,6 +1,6 @@
 ﻿namespace GradeBook;
 
-class Program
+public class Program
 {
     static void Main(string[] args)
     {
@@ -23,4 +23,4 @@ class Program
         // grades.Add(56.1);
 
     }
-} 
+}

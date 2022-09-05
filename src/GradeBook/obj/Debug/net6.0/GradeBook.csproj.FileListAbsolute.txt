@@ -1,8 +1,3 @@
-/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.GeneratedMSBuildEditorConfig.editorconfig
-/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.AssemblyInfoInputs.cache
-/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.AssemblyInfo.cs
-/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.csproj.CoreCompileInputs.cache
-/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.csproj.AssemblyReference.cache
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/bin/Debug/net6.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
@@ -91,8 +86,13 @@
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.AssemblyInfoInputs.cache
+/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.AssemblyInfo.cs
+/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.csproj.CoreCompileInputs.cache
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.csproj.CopyComplete
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.dll
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/ref/GradeBook.dll
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.pdb
 /Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.genruntimeconfig.cache
+/Users/vasile/Projects/CSharpFundamentals/src/GradeBook/obj/Debug/net6.0/GradeBook.csproj.AssemblyReference.cache

@@ -1,21 +1,33 @@
-﻿<Properties StartupConfiguration="{A3A69A0B-7374-4D9B-AE66-F11F966DBB03}|Default">
+﻿<Properties StartupConfiguration="{2D545712-A981-4206-BE1E-0B5980BDA58E}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.test.GradeBook.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.CSharpFundamentals PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.src.GradeBook PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/GradeBook/Program.cs">
+    <Files>
+      <File FileName="src/GradeBook/Program.cs" Line="5" Column="17" />
+      <File FileName="test/GradeBook.Tests/tempCodeRunnerFile.cs" Line="1" Column="1" />
+      <File FileName="test/GradeBook.Tests/BookTests.cs" Line="1" Column="1" />
+      <File FileName="test/GradeBook.Tests/TypeTests.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CSharpFundamentals" expanded="True">
-            <Node name="test" expanded="True" />
-            <Node name="CSharpFundamentals" expanded="True" />
+            <Node name="src" expanded="True">
+              <Node name="GradeBook" expanded="True" />
+            </Node>
+            <Node name="test" expanded="True">
+              <Node name="GradeBook.Tests" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CSharpFundamentals PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
