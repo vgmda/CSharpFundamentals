@@ -3,13 +3,13 @@ namespace GradeBook;
 public class Book 
 {
     public List<double> grades;
-    public string name;
+    public string Name;
 
     // Explicit (implicit) constructor
     public Book(string name)
     {
         grades = new List<double>();
-        this.name = name;
+        Name = name;
 
     }
 
