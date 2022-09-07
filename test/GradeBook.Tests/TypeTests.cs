@@ -5,17 +5,24 @@ namespace GradeBook.Tests;
 public class TypeTests
 {
     [Fact]
-    public void Test1()
+    public void ValueTypesAlsoPassByValue()
     {
         // Given
         var x = GetInt();
+        
         // When
+        SetInt(ref x);
 
         // Then
         Assert.Equal(3, x);
     }
 
-    private object GetInt()
+    private void SetInt(ref int z)
+    {
+        z = 42;
+    }
+
+    private int GetInt()
     {
         return 3;
     }
