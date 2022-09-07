@@ -5,6 +5,28 @@ namespace GradeBook.Tests;
 public class TypeTests
 {
     [Fact]
+    public void CanSetNameFromReference()
+    {
+        // Arrange
+        // var book1 = new Book("Book 1");
+        var book1 = GetBook("Book 1");
+        
+        
+        // Act
+        // SetName(book1, "New Name");
+        SetName(book1, "New Name");
+
+        // Assert (Assertion)
+        Assert.Equal("New Name", book1.Name);
+
+    }
+
+    private void SetName(Book book, string name)
+    {
+        book.Name = name;
+    }
+
+    [Fact]
     public void GetBookReturnsDifferentObjects()
     {
         // Arrange
@@ -30,7 +52,6 @@ public class TypeTests
         var book1 = GetBook("Book 1");
         var book2 = book1;
 
-        
         // Act
         // GetBook() is the 'Act'
 
@@ -43,7 +64,7 @@ public class TypeTests
     }
 
     // Lowest base type (object)
-    Book GetBook(string name)
+     Book GetBook(string name)
     {
         return new Book(name);
     }
