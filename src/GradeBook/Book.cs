@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 
@@ -19,7 +20,15 @@ public class Book
     // Instance member (AddGrade) of a class book
     public void AddGrade(double grade) 
     {
-        grades.Add(grade);
+        if (grade <= 100 || grade >= 0)
+        {
+            grades.Add(grade);
+        }
+        else
+        {
+            Console.WriteLine("Invalid value.");
+        }
+        
     }
 
     public Statistics GetStatistics()
@@ -29,16 +38,29 @@ public class Book
         result.High = double.MinValue;
         result.Low = double.MaxValue;
 
-        foreach(double grade in grades)
+        // foreach(double grade in grades)
+        // {
+        //     // if(grade > result.High)
+        //     // {
+        //     //     result.High = grade;
+        //     // }
+        //     result.High = System.Math.Max(grade, result.High);
+        //     result.Low = System.Math.Min(grade, result.Low);
+        //     result.Average += grade;
+        // }
+
+        var i = 0;
+
+        do
         {
-            // if(grade > result.High)
-            // {
-            //     result.High = grade;
-            // }
-            result.High = System.Math.Max(grade, result.High);
-            result.Low = System.Math.Min(grade, result.Low);
-            result.Average += grade;
-        }
+            result.High = System.Math.Max(grades[i], result.High);
+            result.Low = System.Math.Min(grades[i], result.Low);
+            result.Average += grades[i];
+            i++;
+            
+        } while (i < grades.Count);
+
+
         result.Average /= grades.Count;
 
         return result;
