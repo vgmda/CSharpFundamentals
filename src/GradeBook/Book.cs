@@ -17,6 +17,32 @@ public class Book
 
     }
 
+    public void AddLetterGrade(char letter)
+    {
+        switch(letter)
+        {
+            case 'A':
+                AddGrade(90);
+                break;
+
+            case 'B':
+                AddGrade(80);
+                break;
+            
+            case 'C':
+                AddGrade(70);
+                break;
+
+            case 'D':
+                AddGrade(60);
+                break;
+
+            default:
+                AddGrade(0);
+                break;
+        }
+    }
+
     // Instance member (AddGrade) of a class book
     public void AddGrade(double grade) 
     {
@@ -49,17 +75,12 @@ public class Book
         //     result.Average += grade;
         // }
 
-        var i = 0;
-
-        do
+        for (var i = 0; i < grades.Count; i++)
         {
             result.High = System.Math.Max(grades[i], result.High);
             result.Low = System.Math.Min(grades[i], result.Low);
             result.Average += grades[i];
-            i++;
-            
-        } while (i < grades.Count);
-
+        }
 
         result.Average /= grades.Count;
 
