@@ -27,7 +27,7 @@ public class Program
 
             try
             {
-                var grade = double.Parse(input);
+            var grade = double.Parse(input);
                 book.AddGrade(grade);
             }
             catch(ArgumentException ex)
@@ -48,6 +48,7 @@ public class Program
         
         var stats = book.GetStatistics();
 
+        Console.WriteLine($"For the book name {book.Name}");
         Console.WriteLine($"The lowest grade is {stats.Low}");
         Console.WriteLine($"The highest grade is {stats.High}");
         Console.WriteLine($"The average grade is {stats.Average:N1}");

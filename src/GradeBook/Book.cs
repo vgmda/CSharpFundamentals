@@ -7,7 +7,23 @@ namespace GradeBook;
 public class Book 
 {
     public List<double> grades;
-    public string Name;
+    private string name;
+    public string Name
+    {
+        get
+        {
+            return name;
+        }
+        set
+        {
+            if (!String.IsNullOrEmpty(value))
+            {
+                name = value;
+            }
+            
+        }
+
+    }
 
     // Explicit (implicit) constructor
     public Book(string name)
@@ -17,7 +33,7 @@ public class Book
 
     }
 
-    public void AddLetterGrade(char letter)
+    public void AddGrade(char letter)
     {
         switch(letter)
         {
