@@ -10,9 +10,9 @@ public class TypeTests
     {
         // Given
         string name = "Vaso";
-        
+
         // When
-       var upper = MakeUppercase(name);
+        var upper = MakeUppercase(name);
 
         // Then
         Assert.Equal("Vaso", name);
@@ -30,7 +30,7 @@ public class TypeTests
     {
         // Given
         var x = GetInt();
-        
+
         // When
         SetInt(ref x);
 
@@ -54,8 +54,8 @@ public class TypeTests
         // Arrange
         // var book1 = new Book("Book 1");
         var book1 = GetBook("Book 1");
-        
-        
+
+
         // Act
         // SetName(book1, "New Name");
         GetBookSetName(out book1, "New Name");
@@ -77,8 +77,8 @@ public class TypeTests
         // Arrange
         // var book1 = new Book("Book 1");
         var book1 = GetBook("Book 1");
-        
-        
+
+
         // Act
         // SetName(book1, "New Name");
         GetBookSetName(book1, "New Name");
@@ -100,8 +100,8 @@ public class TypeTests
         // Arrange
         // var book1 = new Book("Book 1");
         var book1 = GetBook("Book 1");
-        
-        
+
+
         // Act
         // SetName(book1, "New Name");
         SetName(book1, "New Name");
@@ -125,7 +125,7 @@ public class TypeTests
         var book1 = GetBook("Book 1");
         var book2 = GetBook("Book 2");
 
-        
+
         // Act
         // GetBook() is the 'Act'
 
@@ -155,7 +155,7 @@ public class TypeTests
     }
 
     // Lowest base type (object)
-     Book GetBook(string name)
+    Book GetBook(string name)
     {
         return new Book(name);
     }

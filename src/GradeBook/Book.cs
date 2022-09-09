@@ -4,38 +4,29 @@ using System.Collections.Generic;
 
 namespace GradeBook;
 
-public class Book 
+public class Book
 {
     public List<double> grades;
-    private string name;
     public string Name
     {
-        get
-        {
-            return name;
-        }
-        set
-        {
-            if (!String.IsNullOrEmpty(value))
-            {
-                name = value;
-            }
-            
-        }
-
+        get;
+        private set;
     }
+
+    // Only assigned in the class constructor
+    readonly string category = "Science";
+    public const string TOPIC = "Other";
 
     // Explicit (implicit) constructor
     public Book(string name)
     {
         grades = new List<double>();
         Name = name;
-
     }
 
     public void AddGrade(char letter)
     {
-        switch(letter)
+        switch (letter)
         {
             case 'A':
                 AddGrade(90.0);
@@ -44,7 +35,7 @@ public class Book
             case 'B':
                 AddGrade(80.0);
                 break;
-            
+
             case 'C':
                 AddGrade(70.0);
                 break;
@@ -60,7 +51,7 @@ public class Book
     }
 
     // Instance member (AddGrade) of a class book
-    public void AddGrade(double grade) 
+    public void AddGrade(double grade)
     {
         if (grade <= 100 || grade >= 0)
         {
@@ -70,7 +61,7 @@ public class Book
         {
             throw new ArgumentException($"Invalid {nameof(grade)}");
         }
-        
+
     }
 
     public Statistics GetStatistics()

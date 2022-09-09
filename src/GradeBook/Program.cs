@@ -27,14 +27,14 @@ public class Program
 
             try
             {
-            var grade = double.Parse(input);
+                var grade = double.Parse(input);
                 book.AddGrade(grade);
             }
-            catch(ArgumentException ex)
+            catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            catch(FormatException ex)
+            catch (FormatException ex)
             {
                 Console.WriteLine(ex.Message);
             }
@@ -42,10 +42,10 @@ public class Program
             {
                 Console.WriteLine("*****");
             }
-            
+
         }
 
-        
+
         var stats = book.GetStatistics();
 
         Console.WriteLine($"For the book name {book.Name}");
