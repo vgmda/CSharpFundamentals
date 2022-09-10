@@ -10,7 +10,7 @@ public class Book
     public string Name
     {
         get;
-        private set;
+        set;
     }
 
     // Only assigned in the class constructor
