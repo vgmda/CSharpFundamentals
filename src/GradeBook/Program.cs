@@ -1,11 +1,18 @@
 ﻿using System;
 namespace GradeBook;
 
+
+
 public class Program
 {
     static void Main(string[] args)
     {
         var book = new Book("Grade Book");
+        book.GradeAdded += OnGradeAdded;
+        book.GradeAdded += OnGradeAdded;
+        book.GradeAdded -= OnGradeAdded;
+        book.GradeAdded += OnGradeAdded;
+
         // book.AddGrade(4.1);
         // book.AddGrade(12.7);
         // book.AddGrade(55.2);
@@ -27,8 +34,15 @@ public class Program
 
             try
             {
+                // Check if the input is not null
+                // if (!string.IsNullOrEmpty(input))
+                // {
+                //     var grade = double.Parse(input);
+                //     book.AddGrade(grade);
+                // }
                 var grade = double.Parse(input);
                 book.AddGrade(grade);
+
             }
             catch (ArgumentException ex)
             {
@@ -59,5 +73,10 @@ public class Program
         // var grades = new List<double>() {12.7, 10.3, 6.11, 4.1};
         // grades.Add(56.1);
 
+    }
+
+    static void OnGradeAdded(object sender, EventArgs e)
+    {
+        Console.WriteLine("A grade was added");
     }
 }

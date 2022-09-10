@@ -4,8 +4,11 @@ using System.Collections.Generic;
 
 namespace GradeBook;
 
+public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
 public class Book
 {
+    public event GradeAddedDelegate GradeAdded;
     public List<double> grades;
     public string Name
     {
@@ -53,9 +56,13 @@ public class Book
     // Instance member (AddGrade) of a class book
     public void AddGrade(double grade)
     {
-        if (grade <= 100 || grade >= 0)
+        if (grade <= 100 && grade >= 0)
         {
             grades.Add(grade);
+            if (GradeAdded != null)
+            {
+                GradeAdded(this, new EventArgs());
+            }
         }
         else
         {
