@@ -9,9 +9,6 @@ public class Program
     {
         var book = new Book("Grade Book");
         book.GradeAdded += OnGradeAdded;
-        book.GradeAdded += OnGradeAdded;
-        book.GradeAdded -= OnGradeAdded;
-        book.GradeAdded += OnGradeAdded;
 
         // book.AddGrade(4.1);
         // book.AddGrade(12.7);
