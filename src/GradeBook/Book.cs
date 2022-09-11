@@ -20,9 +20,9 @@ public class NamedObject
     }
 }
 
-public abstract class BookBase : NamedObject
+public abstract class Book : NamedObject
 {
-    protected BookBase(string name) : base(name)
+    protected Book(string name) : base(name)
     {
     }
 
@@ -30,7 +30,7 @@ public abstract class BookBase : NamedObject
 
 }
 
-public class Book : BookBase
+public class InMemoryBook : Book
 {
     public event GradeAddedDelegate GradeAdded;
     public List<double> grades;
@@ -40,7 +40,7 @@ public class Book : BookBase
     public const string TOPIC = "Other";
 
     // Explicit (implicit) constructor
-    public Book(string name) : base(name)
+    public InMemoryBook(string name) : base(name)
     {
         grades = new List<double>();
         Name = name;
