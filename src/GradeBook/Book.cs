@@ -20,7 +20,17 @@ public class NamedObject
     }
 }
 
-public class Book : NamedObject
+public abstract class BookBase : NamedObject
+{
+    protected BookBase(string name) : base(name)
+    {
+    }
+
+    public abstract void AddGrade(double grade);
+
+}
+
+public class Book : BookBase
 {
     public event GradeAddedDelegate GradeAdded;
     public List<double> grades;
@@ -63,7 +73,7 @@ public class Book : NamedObject
     }
 
     // Instance member (AddGrade) of a class book
-    public void AddGrade(double grade)
+    public override void AddGrade(double grade)
     {
         if (grade <= 100 && grade >= 0)
         {
