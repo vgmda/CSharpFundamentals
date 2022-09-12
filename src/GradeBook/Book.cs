@@ -43,7 +43,7 @@ public abstract class Book : NamedObject, IBook
 
 public class InMemoryBook : Book
 {
-    public override event GradeAddedDelegate GradeAdded;
+    public override event GradeAddedDelegate? GradeAdded;
     public List<double> grades;
 
     // Only assigned in the class constructor
@@ -136,7 +136,7 @@ public class DiskBook : Book
     {
     }
 
-    public override event GradeAddedDelegate GradeAdded;
+    public override event GradeAddedDelegate? GradeAdded;
 
     public override void AddGrade(double grade)
     {
@@ -156,7 +156,13 @@ public class DiskBook : Book
 
         using (var reader = File.OpenText($"{Name}.txt"))
         {
-            reader.ReadLine();
+            var line = reader.ReadLine();
+            while (line != null)
+            {
+                var number = double.Parse(line);
+                result.Add(number);
+                line = reader.ReadLine();
+            }
         }
 
         return result;
