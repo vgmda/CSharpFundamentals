@@ -7,7 +7,7 @@ public class Program
 {
     static void Main(string[] args)
     {
-        var book = new InMemoryBook("Grade Book");
+        IBook book = new DiskBook("Grade Book");
         book.GradeAdded += OnGradeAdded;
 
         // book.AddGrade(4.1);
@@ -34,7 +34,7 @@ public class Program
 
     }
 
-    private static void EnterGrades(Book book)
+    private static void EnterGrades(IBook book)
     {
         while (true)
         {

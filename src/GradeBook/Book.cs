@@ -6,6 +6,14 @@ namespace GradeBook;
 
 public delegate void GradeAddedDelegate(object sender, EventArgs args);
 
+public interface IBook
+{
+    void AddGrade(double grade);
+    Statistics GetStatistics();
+    string Name { get; }
+    event GradeAddedDelegate GradeAdded;
+}
+
 public class NamedObject
 {
     public NamedObject(string name)
@@ -20,19 +28,22 @@ public class NamedObject
     }
 }
 
-public abstract class Book : NamedObject
+public abstract class Book : NamedObject, IBook
 {
     protected Book(string name) : base(name)
     {
     }
 
+    public abstract event GradeAddedDelegate GradeAdded;
+
     public abstract void AddGrade(double grade);
 
+    public abstract Statistics GetStatistics();
 }
 
 public class InMemoryBook : Book
 {
-    public event GradeAddedDelegate GradeAdded;
+    public override event GradeAddedDelegate GradeAdded;
     public List<double> grades;
 
     // Only assigned in the class constructor
@@ -90,7 +101,7 @@ public class InMemoryBook : Book
 
     }
 
-    public Statistics GetStatistics()
+    public override Statistics GetStatistics()
     {
         var result = new Statistics();
         result.Average = 0.0;
@@ -142,4 +153,24 @@ public class InMemoryBook : Book
     }
 
 
+}
+
+public class DiskBook : Book
+{
+    public DiskBook(string name) : base(name)
+    {
+    }
+
+    public override event GradeAddedDelegate GradeAdded;
+
+    public override void AddGrade(double grade)
+    {
+        // ..
+        
+    }
+
+    public override Statistics GetStatistics()
+    {
+        throw new NotImplementedException();
+    }
 }
