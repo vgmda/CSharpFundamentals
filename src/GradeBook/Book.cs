@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using System.IO;
 
 namespace GradeBook;
 
@@ -104,9 +104,7 @@ public class InMemoryBook : Book
     public override Statistics GetStatistics()
     {
         var result = new Statistics();
-        result.Average = 0.0;
-        result.High = double.MinValue;
-        result.Low = double.MaxValue;
+
 
         // foreach(double grade in grades)
         // {
@@ -121,33 +119,10 @@ public class InMemoryBook : Book
 
         for (var i = 0; i < grades.Count; i++)
         {
-            result.High = System.Math.Max(grades[i], result.High);
-            result.Low = System.Math.Min(grades[i], result.Low);
-            result.Average += grades[i];
+            result.Add(grades[i]);
         }
 
-        result.Average /= grades.Count;
 
-        // Advanced switch statement
-        switch (result.Average)
-        {
-            case var d when d >= 90.0:
-                result.Letter = 'A';
-                break;
-            case var d when d >= 80.0:
-                result.Letter = 'B';
-                break;
-            case var d when d >= 70.0:
-                result.Letter = 'C';
-                break;
-            case var d when d >= 60.0:
-                result.Letter = 'D';
-                break;
-
-            default:
-                result.Letter = 'F';
-                break;
-        }
 
         return result;
     }
@@ -165,12 +140,25 @@ public class DiskBook : Book
 
     public override void AddGrade(double grade)
     {
-        // ..
-        
+        using (var writer = File.AppendText($"{Name}.txt"))
+        {
+            writer.WriteLine(grade);
+            if (GradeAdded != null)
+            {
+                GradeAdded(this, new EventArgs());
+            }
+        }
     }
 
     public override Statistics GetStatistics()
     {
-        throw new NotImplementedException();
+        var result = new Statistics();
+
+        using (var reader = File.OpenText($"{Name}.txt"))
+        {
+            reader.ReadLine();
+        }
+
+        return result;
     }
 }
