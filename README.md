@@ -11,12 +11,12 @@ This repo contains a project that covers the following topics:
 
 ## Classes used:
 
-*   [x] IBook
-*   [x] NamedObject
-*   [x] Book : NamedObject, IBook
-*   [x] InMemoryBook : Book
-*   [x] DiskBook : Book
-*   [x] Statistics
-*   [x] BookTests
-*   [x] TypeTests
-*   [x] Program
+* IBook
+* NamedObject
+* Book : NamedObject, IBook
+* InMemoryBook : Book
+* DiskBook : Book
+* Statistics
+* BookTests
+* TypeTests
+* Program
